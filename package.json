@@ -1,0 +1,23 @@
+{
+  "name": "tanhung-hrm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TAN HUNG HRM — hệ thống quản trị nhân sự & tiền lương nội bộ, Công ty TNHH Mỹ thuật Tân Hưng",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build:web": "node scripts/build-web.js",
+    "migrate": "node scripts/migrate.js",
+    "vercel-build": "node scripts/vercel-build.js",
+    "backup": "node scripts/db-backup.js",
+    "restore": "node scripts/db-restore.js",
+    "secrets": "node scripts/gen-secrets.js",
+    "test": "node --test --test-concurrency=1 tests/*.test.js",
+    "reset-admin": "node scripts/reset-admin.js"
+  },
+  "dependencies": {}
+}
